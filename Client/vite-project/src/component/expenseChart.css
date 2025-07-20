@@ -1,0 +1,9 @@
+.expense-chart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /* center align */
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  

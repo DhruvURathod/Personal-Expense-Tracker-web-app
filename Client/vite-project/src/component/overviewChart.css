@@ -1,0 +1,57 @@
+ .row {
+        overflow: visible !important;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      
+  .dashboard-finance-chart {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: visible;
+  }
+  .dashboard-finance-card {
+    position: relative;
+    overflow: visible;
+    padding-bottom: 60px; /* space for legend */
+  }
+  
+  /* Centered balance text in the donut */
+  .dashboard-finance-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .dashboard-finance-balance {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+  }
+  
+  .dashboard-finance-balance-label {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  /* Legend styling */
+  .dashboard-finance-legend {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #374151;
+  }
+  
+  .dashboard-legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  

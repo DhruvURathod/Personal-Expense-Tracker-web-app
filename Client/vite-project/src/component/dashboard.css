@@ -1,0 +1,423 @@
+/* Updated Dashboard CSS */
+
+.dashboard-container {
+  min-height: 100vh;
+  width: 100%;
+  background: #f7f8fa;
+  padding-bottom: 40px;
+}
+
+.dashboard-content {
+  width: 100%;
+  max-width: 1200px;   /* or 1100px, adjust as needed */
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.dashboard-summary-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  margin: 2rem auto 2.5rem auto;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+  min-width: 260px;
+  flex: 1 1 0;
+  max-width: none;
+  margin: 0;
+}
+
+.dashboard-main-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 2rem 0 0 0;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1600px; /* Increased for more space */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dashboard-recent-card,
+.dashboard-finance-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  flex: 1 1 0;
+  min-width: 400px; /* Increased width to avoid overflow */
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-recent-card {
+  margin-right: 0;
+}
+
+.dashboard-recent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.dashboard-recent-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.dashboard-add-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.dashboard-add-btn:hover {
+  background-color: #388e3c;
+}
+
+.dashboard-recent-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.dashboard-recent-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 0.5rem;
+  border-radius: 12px;
+  transition: background 0.15s;
+  margin-bottom: 0.2rem;
+}
+
+.dashboard-recent-category-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.dashboard-recent-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center category and date */
+  flex: 1;
+  min-width: 0;
+}
+
+.dashboard-recent-category {
+  font-weight: 500;
+  color: #222;
+  font-size: 1.05rem;
+  margin-bottom: 2px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dashboard-recent-date {
+  color: #888;
+  font-size: 0.97rem;
+  text-align: center;
+}
+
+.dashboard-recent-amount {
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.dashboard-recent-income {
+  color: #22c55e;
+}
+
+.dashboard-recent-expense {
+  color: #ef4444;
+}
+
+.dashboard-recent-empty {
+  color: #888;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.dashboard-recent-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  border-radius: 50%;
+  font-size: 22px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.dashboard-finance-card {
+  min-width: 0;
+  max-width: none;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-finance-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1.2rem;
+  align-self: flex-start;
+}
+
+.dashboard-secondary-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 2.5rem 0 0 0;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dashboard-lists-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: none;
+}
+
+.dashboard-income-card,
+.dashboard-expense-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  max-width: none;
+}
+
+.dashboard-income-header,
+.dashboard-expense-header {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1.2rem;
+}
+
+.dashboard-income-list,
+.dashboard-expense-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.dashboard-income-item,
+.dashboard-expense-item {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 0.8rem 0.5rem;
+  border-radius: 12px;
+  transition: background 0.15s;
+  margin-bottom: 0.2rem;
+}
+
+.dashboard-income-item:hover,
+.dashboard-expense-item:hover {
+  background: #f3f4f6;
+}
+
+.dashboard-income-amount {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #22c55e;
+  margin-left: auto;
+}
+
+.dashboard-expense-amount {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #ef4444;
+  margin-left: auto;
+}
+
+.dashboard-charts-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: none;
+}
+
+.dashboard-income-chart-card,
+.dashboard-expense-chart-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  max-width: none;
+}
+
+.dashboard-income-chart-title,
+.dashboard-expense-chart-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1.2rem;
+  align-self: flex-start;
+}
+
+/* Media Queries */
+
+@media (max-width: 1100px) {
+  .dashboard-main-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .dashboard-recent-card,
+  .dashboard-finance-card {
+    max-width: none;
+    margin: 0;
+  }
+
+  .dashboard-finance-card {
+    align-items: stretch;
+  }
+
+  .dashboard-summary-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: none;
+  }
+
+  .stat-card {
+    max-width: none;
+    min-width: 0;
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+
+  .dashboard-secondary-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .dashboard-lists-col,
+  .dashboard-charts-col {
+    max-width: none;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .dashboard-content {
+    padding: 0 1rem;
+  }
+
+  .dashboard-summary-cards {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+    max-width: none;
+  }
+
+  .stat-card {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    min-width: 0;
+    max-width: none;
+  }
+
+  .dashboard-main-row {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .dashboard-recent-card,
+  .dashboard-finance-card {
+    padding: 1rem 0.5rem;
+    min-width: 0;
+    max-width: none;
+  }
+
+  .dashboard-secondary-row {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .dashboard-income-card,
+  .dashboard-expense-card,
+  .dashboard-income-chart-card,
+  .dashboard-expense-chart-card {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    min-width: 0;
+    max-width: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .dashboard-content {
+    max-width: 100vw;
+    padding: 0 0.5rem;
+  }
+}
+
+body, .dashboard-container {
+  overflow-x: hidden;
+}
+
+.dashboard-summary-cards,
+.dashboard-main-row,
+.dashboard-secondary-row {
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+}
