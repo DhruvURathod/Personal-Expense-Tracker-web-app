@@ -10,7 +10,7 @@ const transactionRoutes = require("./Routes/transaction");
 const authRoutes = require("./Routes/auth");
 
 async function main() {
-    await mongoose.connect("mongodb://127.0.0.1:27017/transaction");
+    await mongoose.connect(process.env.MONGO_URI);
 }
 
 main()
