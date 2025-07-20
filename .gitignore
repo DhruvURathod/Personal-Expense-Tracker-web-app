@@ -1,0 +1,4 @@
+# Ignore frontend and backend environment files
+.env
+client/.env
+server/.env
